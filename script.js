@@ -5,7 +5,8 @@ var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEv
 // Toggle between always listening and click-to-listen
 var CONTINUOUS = true;
 
-// Indexes
+// This is used to print and work with indexed results
+// in continuous mode, as they're stacked up.
 var inputIndex = 0;
 
 // Setup some example command grammars in groups
