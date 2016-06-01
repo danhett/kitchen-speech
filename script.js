@@ -53,7 +53,7 @@ startRecognition = function() {
 recognition.onresult = function(event) {
   var command = event.results[inputIndex][0].transcript;
   console.log('Result received: ' + command);
-  console.log('With confidence: ' + event.results[0][0].confidence);
+  console.log('With confidence: ' + event.results[inputIndex][0].confidence);
   console.log('---------------');
 
   // Potentially do something like 'if confidence > threshold' here before proceeding,
